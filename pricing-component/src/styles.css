@@ -1,0 +1,79 @@
+:root {
+    --background-light: #ffffff;
+    --text-light: #1a202c;
+    --background-dark: #1a202c;
+    --text-dark: #f7fafc;
+    --primary-color: #3182ce;
+    --secondary-color: #2d3748;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .pricing-table th, .pricing-table td {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .pricing-table thead {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  .pricing-table tbody tr {
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+  }
+  
+  .pricing-table tbody tr:nth-child(even) {
+    background-color: #2a2e36;
+  }
+  
+  .dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+  }
+  
+  .light-mode {
+    background-color: var(--background-light);
+    color: var(--text-light);
+  }
+  
+  .toggle-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-button:focus {
+    outline: 3px solid #0056b3;
+  }
+  
+  .token-estimation,
+  .billing-info {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .pricing-table th, .pricing-table td {
+      padding: 10px;
+    }
+  }
+  
